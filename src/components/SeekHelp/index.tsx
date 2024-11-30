@@ -1,3 +1,4 @@
+import { Btn } from '../Btn'
 import './style.scss'
 
 export const SeekHelp = () =>{
@@ -34,6 +35,7 @@ export const SeekHelp = () =>{
                     Lorem, ipsum dolor sit amet consectetur. Doloribus!
                 </div>
             </div>
+            <Btn colorBtn='secondary'/>
         </section>
     )
 }
