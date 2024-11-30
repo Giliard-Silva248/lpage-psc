@@ -3,7 +3,7 @@ import aboutMeImg from '../../assets/img/aboutMeImg.jpg'
 
 export const AboutMe = () =>{
     return(
-        <section className='container-apre'>
+        <section className='container-apre about'>
             <div className='img-about'>
                 <img src={aboutMeImg} alt="Psi. Luana Ribeiro" />
             </div>

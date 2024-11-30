@@ -1,52 +1,67 @@
-.container-loc{
-    background: #0077b6;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 5rem;
-    color: #f0f8ff;
-    h3{
+.container-ext-loc{
+    background-color: #023e8a;
+    background-image: linear-gradient(0deg, #023e8a 0%, #135e86 85%);
     
-        color: #03045E;
-    }
+    
+    
+    
 
-    .loc{
-        h3{
-            width: 90%;
-        }
+    
+    .container-int-loc{
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        gap: .8rem;
-        padding: 1rem 3rem;
-        div{
-            display: flex;
-            align-items: center;
-            gap: .4rem;
-        }
-        svg{
-            width: 25px;
-            fill: #f0f8ff;
-        }
-    }
-    .contact{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 5rem;
+        color: #f0f8ff;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 100%;
         
-        div > h3,p{
-            margin: .5rem 0;
+       
+    
+        .loc{
+      
+            max-width: 100%;
+           
+
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: .3rem;
-            font-size: 1rem;
+            gap: .8rem;
+            padding: 1rem 3rem;
+            div{
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+            }
             svg{
-                color: #f0f8ff;
+                width: 25px;
+                fill: #f0f8ff;
             }
         }
-       
+        .contact{
+            max-width: 50%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            
+            div > h3,p{
+                margin: .5rem 0;
+                display: flex;
+                align-items: center;
+                text-align: justify;
+                gap: .3rem;
+                font-size: 1rem;
+                svg{
+                    color: #f0f8ff;
+                }
+            }
+           
+        }
     }
+
+
 }

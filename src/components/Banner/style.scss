@@ -1,46 +1,50 @@
 .container-apre{
+    max-width: 1400px;
+    margin: 0 auto;
     width: 100%;
-    height: 100vh;
     padding: 5rem 3rem;
-
-
     display: flex;
-
-
+    align-items: center;
+    gap: 5rem;
     .ifns{
         width: 50%;
         padding: 4rem 8rem;
+        
         h2{
             color: #023E8A;
             margin: .7rem 0;
         }
+        
         .title{
             display: flex;
             justify-content: center;
             align-items: center;
             gap: .5rem;
-          
         }
+        
         p{
+            text-align: justify;
             margin: .5rem 0;
             font-size: 1.1rem;
         }
     }
+
     .imgContainer{
         width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         background: url("../../assets/img/bgImg.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+
         img{
             object-fit: contain;
-            height: 95%;
-            width: 100%;
+            width: 50%;
+            
         }
+
         p{
             width: 60%;
             height: 5%;
@@ -50,7 +54,73 @@
             border-radius: 0 10px 0 10px;
             background-color: #0077b6;
             background-image: linear-gradient(315deg, #0077b6 0%, #48cae4 100%);
+        }
+    }
 
+    // Responsividade
+    @media(max-width: 1200px) {
+        .ifns {
+            width: 50%;
+            padding: 3rem 6rem;
+        }
+
+        .imgContainer {
+            width: 50%;
+            img {
+                height: 90%;
+            }
+        }
+    }
+
+    @media(max-width: 992px) {
+        .ifns {
+            width: 60%;
+            padding: 2rem 4rem;
+        }
+
+        .imgContainer {
+            width: 40%;
+            img {
+                height: 85%;
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+
+        .ifns, .imgContainer {
+            width: 100%;
+            padding: 2rem 3rem;
+        }
+
+        .imgContainer {
+            background-size: cover;
+            img {
+                height: 75%;
+            }
+
+            p {
+                width: 80%;
+                height: 10%;
+            }
+        }
+    }
+
+    @media(max-width: 576px) {
+        .ifns, .imgContainer {
+            padding: 1rem 1.5rem;
+        }
+
+        .imgContainer {
+            img {
+                height: 70%;
+            }
+
+            p {
+                width: 90%;
+                height: 15%;
+            }
         }
     }
 }
